@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
 import './index.css';
-import App from './App';
+import App from './app';
 import * as serviceWorker from './serviceWorker';
+import { configureMiddleware } from './app/middleware';
+
+configureMiddleware();
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
